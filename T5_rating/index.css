@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "poppins";
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, .8);
+}
+.box{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.box .btn{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 20px;
+    position: relative;
+}
+.rate-section{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.9);
+    height: 250px;
+    width: 350px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .8);
+    transform: scale(0);
+    transition: .3s;
+}
+.rate-section-slide{
+    transform: scale(1);
+}
+.rate-section h2{
+    color: #fff;
+    text-align: center;
+    margin-top: 25px;
+}
+.rate-section .emojis{
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+li{
+    list-style: none;
+    color: #fff;
+    margin-left: 9px;
+}
+.emojis i{
+    color: #fff;
+    font-size: 45px;
+    cursor: pointer;
+}
+.item.active i{
+    background: #00ff;
+    color: #000;
+    box-shadow: 0 0 20px #00ff;
+    border-radius: 50%;
+}
+
+.submit{
+    position: absolute;
+    left: 50%;
+    top: 82%;
+    transform: translate(-50%, -50%);
+    height: 45px;
+    width: 90%;
+    font-size: 18px;
+    background: #fff;
+    border: none;
+    outline: none;
+    color: #1b1c3b;
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.success-popup{
+    position: absolute;
+    height: 250px;
+    width: 350px;
+    background: rgba(0, 0, 0, 1);
+    color: #fff;
+    border-radius: 15px;
+    box-shadow: 0, 0, 20px rgba(0, 0, 0, .8);
+    transform: scale(0);
+    transition: .3s;
+}
+.success-popup-slide{
+    transform: scale(1);
+}
+
+.check-icon{
+    text-align: center;
+    color: #fff;
+    font-size: 60px;
+    color: #00ff;
+}
+h3{
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+}
+p{
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+}
